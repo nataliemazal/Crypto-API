@@ -1,0 +1,129 @@
+* {
+  font-family: "Century Gothic";
+}
+
+.parallax {
+  background-image: url("BG.jpg");
+
+  animation: gradient 15s ease infinite;
+  /* Set a specific height */
+  min-height: 800px;
+  min-width: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mainHeadere {
+  font-size: 48pt;
+  padding-top: 120px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+#mainInfo {
+  font-size: 24pt;
+}
+
+#showAllCoins {
+  display: none;
+  margin-left: 6px;
+  padding: 0;
+  width: 120px;
+}
+
+#coins {
+  margin-left: 40px;
+}
+.coinArea {
+  width: 220px;
+  height: 250px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-switch {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 200px;
+  font-size: 12pt;
+  font-weight: bold;
+  margin-left: -35px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+}
+
+h1 {
+  font-size: 12pt;
+  height: 50px;
+}
+h2 {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.outer {
+  height: 100vh;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.moreInfo {
+  padding: 5px;
+  margin-top: -14px;
+}
+.infoc {
+  width: 100px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: -25px;
+  text-align: right;
+}
+
+.chartstyle {
+  width: 90%;
+  height: 500px;
+  margin-left: 50px;
+}
+
+#LRprogressBar {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .coinArea {
+    width: 350px;
+    height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 20px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .coinArea {
+    width: 280px;
+    height: 250px;
+    display: inline-block;
+
+    margin: 10px;
+  }
+}
